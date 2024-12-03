@@ -1,0 +1,77 @@
+.Map-div {margin-top: 4rem;
+    box-shadow: black;
+    height: 30rem;
+    margin-left: 4rem;
+   
+    display: flex;
+    position: relative;
+    width: 90%;
+    margin-bottom: 4rem;
+    border-radius: 2rem;}
+  
+
+   .Map-div-resturan-location-details{
+       height: 23rem;
+    width: 21rem;
+   background: #03081FF7;
+border-radius: 1rem;
+    z-index: 2;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    position: absolute;
+}
+
+
+.Map-div-resturan-location-details p{ margin-left: 2rem;color: white;line-height: 1.5rem; font-size: .8rem;margin-bottom: .2rem;margin-top: 1rem;}
+.Map-div-resturan-location-details h1{ margin-left: 2rem; margin-top: 2.5rem;color: white;font-size: 1.5rem}
+.Map-div-resturan-location-details span{ margin-left: 2rem;color: #ff9900;font-size: 1.5srem}
+.Map-div-resturan-location-details h2{ margin-left: 2rem;color: #ff9900;font-size: 1.2rem}
+
+   .foodlist-category{margin-top: 5rem;position: relative;}
+
+    .foodlist-category-options{ width:100%;display: flex;flex-wrap:wrap;align-content: flex-start;gap: 2rem;height: 32rem;overflow: hidden;}  
+    .foodlist-category-item{     width: 23rem;
+    height: 12rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-top: 1rem;
+    margin-left: .9rem;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0,.2)}
+
+   .foodlist-category-options-add-img{width: 2.5rem;height: 2.5rem;}
+
+    .foodlist-category-options-add{
+
+    height: 4rem;
+    width: 5rem;border: none;
+    border-radius: 2rem 0 1rem 0;
+    padding-top: 1rem;
+    background: rgba(255, 255, 255, 0.842);
+    z-index: 5;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 18rem;
+    margin-top: 8rem;
+    }
+
+
+    .foodlist-category-item-img{width: 9rem;
+    height: 9.3rem;
+    border-radius: 1rem;
+    margin-top: 1.4rem;
+    margin-left: 12.5rem;}
+
+   
+
+.foodlist-category-item-info{ height: 9.3rem;margin-top: 1.4rem;width: 50%;position: absolute; }
+
+.foodlist-category-item-info-name{height: 37%;width:100% ;
+  text-align: start; font-size: 1rem ;font-weight: bold ;padding-left: 1rem;padding-top: 1rem;}
+
+.foodlist-category-description{height: 37%;width:100% }
+
+.foodlist-category-description p{ font-size: .7rem;padding-left: 1rem;margin-top: 1rem;}
+
+.foodlist-category-item-info-price{height: 26%;width:100% ;
+text-align: start; font-size: 1rem ;font-weight: bold ;padding-left: 1rem}

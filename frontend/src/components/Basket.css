@@ -1,0 +1,128 @@
+.disabled-button {
+  background-color: gray;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.Share-Cart-button{  width: 100%;
+  height: 5rem;
+  background-image: url('https://res.cloudinary.com/dlwpgtmcn/image/upload/v1733171369/Frame_96_svuz88.png');
+  background-size: cover; border-radius: .6rem;
+  background-repeat: no-repeat;
+  background-position: center;}
+
+.basket-div{ width: 35rem;}
+.Basket-container {
+  
+  margin: 4rem;height: auto;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+ border: rgba(249, 249, 249, 1);
+  font-family: Arial, sans-serif;
+}
+
+/* Basket heading */
+.Basket-container h2 {
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/* Basket items list */
+.Basket-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual Basket item styling */
+.Basket-item {flex-direction: row;
+  display: flex;background: rgba(249, 249, 249, 1);
+  align-items: center;   height: auto ;
+  border: 0.1rem solid #e0e0e0;border-style: hidden  solid  solid solid;
+ 
+
+}
+
+.Basket-item-dcription{width: 100%;height: 47%;overflow: hidden;font-size: .6rem;padding-top: .5rem;}
+.Basket-item-name{width: 100%;height: 20%;font-size: small;font-weight: bold;overflow: hidden;}
+.Basket-item-price{width: 100%;height: 33%;font-size: .9rem;font-weight: bold;padding-top: .2rem;color: #28a745;padding-bottom: .5rem;}
+/* Item details */
+.Basket-item-details {display: flex;flex-direction: column;width: 60%;height: 100%;padding: 1rem 0 ;
+}
+
+.Basket-increaser{   width:2rem;
+  height: 2rem;
+  color: #fff;
+  background: rgba(252, 138, 6, 1);
+  font-size: 1rem;
+  border-radius: 50%;margin-left: 1rem;margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  }
+
+.reducer{
+   width: 20% ;
+  height: 2rem;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 50%;
+  display: flex;
+  
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Basket-discount-div{width: 100%;padding: 1rem;border: 0.1rem solid #e0e0e0;border-style: hidden  solid  solid solid;background: rgba(249, 249, 249, 1);}
+.Basket-discount-div h3{font-size: 1rem;font-weight: bold;}
+.Basket-discount-div span{display: flex;flex-direction: row;justify-content: space-between;margin-bottom: 1rem;}
+
+.Basket-total-pay{width: 100%;padding: 1rem;border: 0.1rem solid #e0e0e0;border-style: hidden  solid  solid solid;background: rgba(249, 249, 249, 1);}
+.Totalpayable{background: rgba(252, 138, 6, 1);display: flex;
+  flex-direction: row;justify-content:space-around;color: white;height: 3.5rem;border-radius: 1rem;}
+  .Totalpayable h1{color: white;padding-top: .5rem;}
+  .Totalpayable p{padding-top: 1rem;}
+
+  .Basket-total-pay-options{display: flex;background: rgba(249, 249, 249, 1);border: 0.1rem solid #e0e0e0;margin-top: 1rem;
+  flex-direction: row;justify-content:space-around;height: 2.5rem;border-radius: 2rem;}
+  .Basket-total-pay-options img{color: white;
+    margin-top: .4rem;
+    height: 1.5rem;
+    width: 1.5rem;}
+  .Basket-total-pay-options p{padding-top: .6rem;color: black;font-size: small;}
+  .Basket-Delivery-collection{
+  display: flex;background: rgba(249, 249, 249, 1);
+  align-items: center;   height: auto ;flex-direction: row;
+  border: 0.1rem solid #e0e0e0;border-style: hidden  solid  hidden solid ;}
+  .Basket-Delivery{height: 5rem;width: 50%;border: 0.1rem solid #e0e0e0;border-style: hidden  solid  hidden hidden;margin: .5rem 0;}
+
+  .Basket-Delivery span{background:rgba(238, 238, 238, 1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   border: 0.1rem solid #e0e0e0;
+    height: 5rem;
+    border-radius: 1rem;
+    margin: 0 .5rem;}
+
+      .Basket-Delivery img{height: 1.5rem;width: 1.5rem;margin-top: 1rem;margin-left: 2.55rem;}
+      .Basket-Delivery h3{font-size: .9rem;font-weight: bold;margin-bottom: .2rem;}
+      .Basket-Delivery p{font-size: small;}
+
+      .Basket-collection{height: 5rem;width: 50%;margin: .5rem 0; text-align: center;}
+
+      
+        .Basket-collection img{height: 1.5rem;width: 1.5rem;margin-top: 1rem;opacity: calc(0.5);}
+       .Basket-collection h3{font-size: .9rem;font-weight: bold;margin-bottom: .2rem;}
+      .Basket-collection p{font-size: small;}
+ .checkout h3{padding-left: 4.5rem;}
+ .checkout img{position: absolute;margin-left: 1rem; height: 1.5rem;
+    width: 1.5rem;}
+      .checkout button{background:#28a745;display: flex;position: relative;padding-top: 1rem; width: 100%;border: none;
+        color: white;height: 3.5rem;border-radius: 1rem}
+        .checkout{width: 100%;padding: .5rem;border: 0.1rem solid #e0e0e0;border-style: hidden  solid  solid solid;background: rgba(249, 249, 249, 1);}

@@ -1,0 +1,138 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+a {
+ 
+  color: #333;font-size: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+footer {
+ background: #dfdcdc96;
+
+  padding: 2rem 0 0 0 ;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+.footer-logo-section h1 {
+  font-size: 1.8rem;
+}
+
+.footerimg{height:65px;width:300px;padding-left: 3.5rem; }
+
+.footer-logo-section .highlight {
+  color: #ff9900;
+}
+
+.app-links{
+  height: 40px;
+ padding-left: 3.5rem;padding-top: 1rem;
+}
+
+.footer-logo-section p {
+  margin-top: 3rem;
+  font-size: 0.9rem; padding-left: 3.5rem;
+  color: #666;
+}
+
+.deal-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.deal-email { 
+  display: flex;
+ border-radius:2.7rem;height:2.7rem;
+background: #cecbcb;
+
+}
+.youremaigmailcom{padding-left: 1.2rem;
+   
+font-size: 15px;
+font-weight: 400;
+color: #666;
+line-height: 43px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+
+.subscribe-btn {
+  background-color: #ff9900;width: 40%;
+  border: none;text-align: center;
+  border-radius:2.7rem;height:2.7rem;padding-top: .7rem;
+  color: #fff;margin-left: 1.7rem;
+  cursor: pointer;
+}
+
+.deal-section p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+.social-icons{
+    margin-top: 1rem;
+}
+.deal-section .social-icons i {
+  margin-right: .7rem;cursor: pointer;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+
+.links-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.links-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.links-section ul li a:hover {
+  color: #ff9900;
+}
+
+
+.footer-bottom {
+  margin-top: 2rem;display: flex;
+ flex-direction: row;background: #03081F;
+width: 100%; height: 4.5rem;
+  padding-top: 1rem;justify-content:space-between;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+.footer-bottom a {cursor: pointer;
+     color: #ffffff;font-size: 1rem;margin-right: 1rem;padding-right: 2rem;text-decoration: none;
+}
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #ffffff;margin-left: 4rem;margin-top: .6rem;
+}
+
+.footer-bottom  a:hover {
+  color: #ff9900;
+}

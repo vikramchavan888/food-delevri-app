@@ -1,0 +1,177 @@
+.macdonal-nav { 
+  height: 4rem; 
+  margin-left: auto; 
+  width: 90%; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  background: #ffffff; 
+}
+
+.macdonal-order-img { 
+  height: 2.5rem; 
+  margin-top: .5rem; 
+  width: 11rem; 
+}
+
+.macdonal-nav-links { 
+  width: 70%; 
+  display: flex; 
+  flex-direction: row; 
+  font-weight: bold; 
+  font-size: .9rem; 
+}
+
+.macdonal-nav-links-home {
+  width: 12%; 
+  height: 65%; 
+  text-align: center; 
+  padding-top: .6rem; 
+  margin-top: .7rem;
+}
+
+.macdonal-nav-links-BrowseMenu { 
+  width: 17%; 
+  height: 100%; 
+  text-align: center; 
+  padding-top: 1.4rem; 
+}
+
+.macdonal-nav-links-SpecialOffers { 
+  width: 17%; 
+  height: 100%; 
+  text-align: center; 
+  padding-top: 1.4rem; 
+}
+
+.macdonal-nav-links-Restaurants { 
+   width: 17%; 
+  height: 65%; 
+  border-radius: 5rem; 
+  text-align: center; 
+  padding-top: .6rem; 
+  background: #FC8A06; 
+  color: white; 
+  margin-top: .7rem;
+}
+
+.macdonal-nav-links-TrackOrder { 
+  width: 17%; 
+  height: 100%; 
+  text-align: center; 
+  padding-top: 1.4rem; 
+}
+
+.macdonal-nav-links-login-signup {
+  width: 20%; 
+  height: 65%; 
+  border-radius: 5rem; 
+  display: flex; 
+  background: #03081F; 
+  color: white; 
+  margin-top: .7rem;
+}
+
+.macdonal-nav-links-login-signup img { 
+  height: 1.5rem; 
+  width: 1.5rem; 
+  margin-left: 1rem; 
+  margin-top: .5rem; 
+}
+
+.macdonal-nav-links-login-signup p { 
+  margin-top: .7rem; 
+  margin-left: .5rem; 
+  width: 60%; 
+  margin-left: .5rem; 
+  overflow: hidden; 
+}
+
+.macdonal-banner {
+  height: 21rem; 
+  display: flex; position: relative;
+  margin-left: 4rem; 
+  width: 90%; 
+  border: 1px solid #00000033; 
+  background: #FBFBFB; 
+  border-radius: 1rem;
+}
+
+.macdonal-banner-main-img{width: 100%;height: 100%;object-fit: cover;border-radius: 1rem;z-index: 1;}
+
+.macdonal-banner .gradient{border-radius: 1rem; width: 100%;height: 100%;position: absolute; z-index: 2;
+background: rgba(3, 8, 31, 0.9);}
+
+.macdonal-banner-first-img{
+    width: 24rem;
+    height: 15rem;
+    z-index: 3;border-radius: 1rem;
+    margin-top: 2.91rem;
+    margin-left: 49rem;
+    position: absolute;}
+
+.macdonal-banner-rating{ width: 5rem;
+    height: 6rem;
+    z-index: 4;
+    margin-top: 12.5rem;
+    margin-left: 46rem;
+    position: absolute;}
+.macdonal-banner-name{width: 42%;z-index: 2;margin-left: 3rem;margin-top: 7rem;position: absolute;}
+.macdonal-banner-name h1{font-size: 2.6rem;color: white;}
+.macdonal-banner-name p{color: white;margin-bottom: 1rem;}
+.macdonal-banner-name span{margin-top: 1rem; display: flex;flex-direction: row;justify-content: space-between;}
+.macdonal-banner-name-Minimum{width: 15rem;height: 3rem;border-radius: 2rem;  border: 1px solid #FBFBFB;}
+
+.macdonal-banner-name img{margin-left: 1rem;margin-top: .5rem;position: absolute;}
+.macdonal-banner-name-Minimum p{font-size: .9rem;font-weight: bold; margin-left: 3.3rem;margin-top: .8rem;position: absolute;}
+.macdonal-banner-name-opentill{z-index: 3;width: 15rem;height: 3rem;border-radius:0 1rem 1rem 0;background:#FC8A06 ;position: absolute;margin-top: 19.5rem;}
+.macdonal-banner-name-opentill img{margin-left: 1rem;margin-top: .5rem;position: absolute;}
+.macdonal-banner-name-opentill p{font-size: .9rem;font-weight: bold; margin-left: 3.3rem;margin-top: .8rem;position: absolute;color: white;}
+
+
+
+
+.macdonal-deals-options-main-img{width: 100%;height: 100%;object-fit:cover;border-radius: 1rem;}
+.macdonal-deals-options p{padding-top:  11rem;padding-left: 1.5rem; font-size: .9rem; color:#ff9900;position: absolute;}
+.macdonal-deals-options h1{position: absolute;color: white;padding-top:  12.5rem;padding-left: 1.5rem;font-size: 1.5rem;}
+.macdonal-deals-options .gradient{border-radius: 1rem; width: 100%;height: 100%;position: absolute; background: linear-gradient(245.7deg, rgba(255, 255, 255, 0) 0.94%, rgba(3, 8, 31, 0.19) 51.68%, rgba(3, 8, 31, 0.89) 87.9%)} 
+
+.macdonal-deals-Chef-Burgers-London{width: 24rem;height: 15rem; border-radius: 1rem;position: relative;}
+
+.macdonal-deals-Butterbrot-CafeLondon{width: 24rem;height: 15rem; border-radius: 1rem;position: relative;}
+
+.macdonal-deals-Grand-Ai-Cafe-London{width:24rem; height: 15rem;border-radius: 1rem;position: relative;}
+
+.macdonal-landingpage{margin-top: 5rem;overflow: hidden;overflow-y: scroll;
+       display: flex;height:70rem;flex-direction: column;margin-right: 4rem;
+       margin-left: 4rem; width: 90%;margin-bottom: 5rem;}
+
+.macdonal-deals-options{width: 100%;display: flex;flex-wrap:wrap;align-content: flex-start;gap: 2rem;}
+
+.macdonal-deals-options-discount{
+    height: 3rem;
+    width: 4.5rem;
+    border-radius: 0 0 1rem 1rem;padding-top: 1rem;
+    background: black;color: white;
+    z-index: 5;text-align: center;font-weight: bold;
+    position: absolute;
+    margin-left: 18.5rem;}
+
+    .macdonal-deals-options-add{     height: 4rem;
+    width: 5rem;
+    border-radius: 2rem 0 1rem 0;
+    padding-top: 1rem;
+    background: rgba(255, 255, 255, 0.856);
+    z-index: 5;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 19rem;
+    margin-top: 11rem;}
+
+    .macdonal-deals-options-add-img{height: 2.5rem;
+    width: 2.5rem;}
+
+    .macdonal-tem-cart{display: flex;width: 100%;height: auto;}
+
+    

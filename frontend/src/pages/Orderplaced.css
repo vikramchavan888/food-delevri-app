@@ -1,0 +1,45 @@
+.orderscucess-nav{ height: 4rem;margin-left: 7rem; 
+                        width: 90%;display: flex;flex-direction: row;
+                        justify-content: space-between;background: #ffffff; }
+
+    .orderscucess-order-img{height:2.5rem;margin-top: .5rem;width: 11rem;}
+
+    .orderscucess-nav-links{width: 70%;display: flex;flex-direction: row;font-weight: bold; font-size: .9rem;}
+
+    .orderscucess-nav-links-home{
+       width: 17%;  height: 100%;text-align: center;padding-top: 1.4rem;}
+
+    .orderscucess-nav-links-SpecialOffers{ width: 17%; height: 100%;text-align: center;padding-top: 1.4rem;}
+
+    .orderscucess-nav-links-Restaurants { width: 17%; height: 100%;text-align: center;padding-top: 1.4rem;}
+
+    .orderscucess-nav-links-TrackOrder{ width: 17%; height: 100%;text-align: center;padding-top: 1.4rem;}
+
+    .orderscucess-nav-links-login-signup{cursor: pointer;
+      width: 20%; height: 65%;border-radius: 5rem;
+      display: flex; background: #03081F;
+      color: white;margin-top: .7rem;}
+
+    .orderscucess-nav-links-login-signup img{ height:1.5rem ;width:1.5rem ;margin-left: 1rem;margin-top: .5rem;}
+
+    .orderscucess-nav-links-login-signup p{margin-top: .7rem;margin-left: .5rem; width: 60%;margin-left: .5rem;overflow: hidden;}
+
+.orderscucess-dispaly{max-width: 90%;
+    margin: 1rem auto;
+    padding: 0 2rem 2rem 2rem;
+    background: white;justify-items: center;text-align: center;
+    border-radius: 0.5rem;
+    height: auto;
+  }
+
+    .orderscucess-dispaly p{color: rgba(131, 133, 138, 1);font-size: .9rem;margin-bottom: 1rem;}
+    .orderscucess-dispaly img{height: 10rem;width: 10rem;margin-bottom: 1rem;}
+    .orderscucess-dispaly h4{margin-bottom: 1rem;}
+
+    .orderscucess-display-item{ height:auto;padding: .8rem; width: 21rem;border: 2px  solid rgba(131, 133, 138, 1);border-radius: 1rem;}
+
+     .orderscucess-display-item    p{color: black;}
+
+      .orderscucess-home-button{ cursor: pointer;width: 19rem;
+     border: 1px solid;border-radius: 2rem;height: 2.5rem; background: rgba(252, 138, 6, 1);color: white;
+     }

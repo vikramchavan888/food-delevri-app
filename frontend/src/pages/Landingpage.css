@@ -1,0 +1,329 @@
+
+
+     .landingpage-nav{ height: 4rem;margin-left: 4rem; 
+                        width: 90%;display: flex;flex-direction: row;
+                        justify-content: space-between;background: #ffffff; }
+
+    .landingpage-order-img{height:2.5rem;margin-top: .5rem;width: 11rem;}
+
+    .landingpage-nav-links{width: 70%;display: flex;flex-direction: row;font-weight: bold; font-size: .9rem;}
+
+    .landingpage-nav-links-home{
+      width: 12%;height: 65%;border-radius: 5rem;
+      text-align: center;padding-top: .6rem;
+      background: #FC8A06;color: white;
+      margin-top: .7rem;}
+
+    .landingpage-nav-links-BrowseMenu { width: 17%;  height: 100%;text-align: center;padding-top: 1.4rem;}
+
+    .landingpage-nav-links-SpecialOffers{ width: 17%; height: 100%;text-align: center;padding-top: 1.4rem;}
+
+    .landingpage-nav-links-Restaurants { width: 17%; height: 100%;text-align: center;padding-top: 1.4rem;}
+
+    .landingpage-nav-links-TrackOrder{ width: 17%; height: 100%;text-align: center;padding-top: 1.4rem;}
+
+    .landingpage-nav-links-login-signup{
+      width: 20%; height: 65%;border-radius: 5rem;
+      display: flex; background: #03081F;
+      color: white;margin-top: .7rem;}
+
+    .landingpage-nav-links-login-signup img{ height:1.5rem ;width:1.5rem ;margin-left: 1rem;margin-top: .5rem;}
+
+    .landingpage-nav-links-login-signup p{margin-top: .7rem;margin-left: .5rem; width: 60%;margin-left: .5rem;overflow: hidden;}
+
+    .landindpage-banner-one{
+      height: 27rem;display: flex;
+       margin-left: 4rem; width: 90%;
+       border: 1px solid #00000033;
+       background: #FBFBFB;
+       border-radius: 1rem}
+
+    .landingpage-banner-one-first-img{    
+    width: 36rem;
+    height: 24rem;
+    z-index: 3;
+    margin-top: 2.91rem;
+    margin-left: 19rem;
+    position: absolute;}
+
+     .landingpage-banner-one-second-img{  
+      width: 17rem;
+      height: 20rem;
+      margin-left: 43rem;
+      z-index: 2;
+      position: absolute;
+      margin-top: 6.91rem;}
+
+     .landindpage-banner-one-backgroung{
+      margin-top: 3.9rem;background-color:#FC8A06 ; 
+      width:30rem; height: 23rem; ;border-radius:  12rem 0 1rem 0;
+      right: 4.3rem; z-index: 1;position: absolute;}
+
+      .landindpage-banner-one-postcode{width: 50%;z-index: 2;margin-left: 3rem;margin-top: 7rem;}
+
+      .landindpage-banner-one-postcode-input{
+            display: flex;width: 17rem;
+            border-radius:2.7rem;height:2.7rem;
+            background: #cecbcb;}
+            
+
+    .egEC4R3TE{margin-right: 2.35rem;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    line-height: 43px;
+    margin-left: 1.5rem;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;}
+        
+      .landindpage-banner-one-postcode-btn{ background-color: #ff9900;width: 40%;
+  border: none;text-align: center;
+  border-radius:2.7rem;height:2.7rem;padding-top: .7rem;
+  color: #fff;
+  cursor: pointer;}
+
+.landindpage-banner-one-postcode h6{margin-bottom: 1rem; font-size: .7rem;}
+
+.Feast-Your-Senses{font-size:3rem; }
+.Fast-and-Fresh{font-size:3rem; color: #ff9900;margin-bottom: 3rem;}
+.landindpage-banner-one-postcode p{margin-bottom: 1rem; font-size: .9rem;}
+
+.landingpage-deals{
+       display: flex;height: 21rem;flex-direction: column;
+       margin-left: 4rem; width: 90%;margin-bottom: 2rem;}
+
+.landingpage-deals-links{height: 6rem;width: 100%;display: flex;flex-direction: row;margin-left: 1.5rem;}
+
+.Up-to-40{padding-top: 1.9rem; width: 50%;font-size: 1.5rem;font-weight: 800;color: #000;}
+.Up-to-40 img{height: 1.3rem; width: 1.3rem;}
+.Up-to-40 p{font-size: .9rem;}
+
+.Vegan{width: 11%; text-align: center;padding-top: 2.2rem;} 
+.Vegan p{font-size: .9rem;}
+
+.Sushi{width: 11%;text-align: center;padding-top: 2.2rem;} 
+.Sushi p{font-size: .9rem;}
+
+
+.Pizza-Fast-food{width: 15%;
+    height: 48%;
+    border-radius: 5rem;
+    text-align: center;
+    padding-top: .6rem;
+    color: #ff9900;
+    border: .1rem solid #ff9900;
+    margin-top: 1.5rem;} 
+.Pizza-Fast-food p{font-size: .9rem;}
+
+.others{width: 11%;text-align: center;padding-top: 2.2rem;} 
+.others p{font-size: .9rem;}
+
+.landingpage-deals-options{width: 100%;display: flex;flex-direction: row;justify-content: space-between;}
+
+.landingpage-deals-options img{width: 100%;height: 100%;object-fit:cover;border-radius: 1rem;}
+.landingpage-deals-options p{padding-top:  11rem;padding-left: 2rem; font-size: .9rem; color:#ff9900;position: absolute;}
+.landingpage-deals-options h4{position: absolute;color: white;padding-top:  12.5rem;padding-left: 2rem;}
+.landingpage-deals-options .gradient{border-radius: 1rem; width: 100%;height: 100%;position: absolute; background: linear-gradient(245.7deg, rgba(255, 255, 255, 0) 0.94%, rgba(3, 8, 31, 0.19) 51.68%, rgba(3, 8, 31, 0.89) 87.9%)} 
+
+.landingpage-deals-Chef-Burgers-London{width: 32%;height: 15rem; border-radius: 1rem;position: relative;}
+
+.landingpage-deals-Butterbrot-CafeLondon{width: 32%;height: 15rem; border-radius: 1rem;position: relative;}
+
+.landingpage-deals-Grand-Ai-Cafe-London{width: 32%; height: 15rem;border-radius: 1rem;position: relative;}
+
+.landingpage-menu-catagoery{
+display: flex;height: 21rem;display: flex;
+flex-direction: column;margin-top: 2rem;margin-bottom: 2rem;
+margin-left: 4rem; width: 90%; 
+}
+
+.landingpage-menu-catagoery-Navigation{width: 100%;display: flex;flex-direction: row;justify-content: space-between;
+}
+
+.landingpage-menu-catagoery-item{ height: 13rem;margin-top: 1.5rem;border-radius: 1rem;
+    width: 11.5rem;}
+.landingpage-menu-catagoery-item-img{height: 79%;}
+
+.landingpage-menu-catagoery h2{ margin-left: 1rem;margin-bottom: 2rem;color: black;
+}
+
+.landingpage-menu-catagoery-item-name{ border-radius:  0 0 1rem 1rem; font-weight: bold; color:black; background: #F5F5F5;border: 1px solid #0000001A
+;
+    padding-top: .8rem;padding-left: 1rem;}
+
+    .landingpage-menu-catagoery img {width: 100%;height: 100%;object-fit:fill;border-radius: 1rem 1rem 0 0;}  
+    .landingpage-menu-catagoery h6{margin-bottom: 1rem; font-size: .7rem;color: #ff9900;}
+
+
+
+      .landindpage-banner-two{height: 31rem;
+       margin-left: 4rem; width: 90%;margin-top: 2rem;margin-bottom: 2rem;
+       border-radius: 1rem}
+
+       .landindpage-banner-two-image-backgroung p{margin-left: 42rem;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+        }
+
+
+.landindpage-banner-two-first-img{ width: 40rem;
+    height: 31rem;
+    z-index: 3;opacity: inherit;
+    margin-left: 1rem;
+    position: absolute;border-radius: 1rem }
+
+    .landindpage-banner-two-second-img{ width: 31rem;
+    z-index: 2;
+    margin-top: 5rem;
+    z-index: 3;
+    margin-left: 37rem;
+    position: absolute;
+    border-radius: 1rem;}
+  
+.landindpage-banner-two-image-backgroung{
+  position: absolute;z-index: 1;
+  background: #e7e9f3f7;border-radius:1rem;
+   height:28rem;margin-top: 3rem; width: 90%;}
+
+.orderingmore{
+    height: 4.5rem;
+    width: 41rem;
+    border-radius: 3rem;
+    background: #03081F;
+    margin-left: 29rem;
+    margin-top: 10.5rem;
+}
+.landindpage-banner-two-third-img{
+      height: 3rem;
+    width: 26rem;
+    margin-top: 1rem;
+    margin-left: 12rem;
+
+}
+.landindpage-banner-two-fourth-img{
+    height: 3.5rem;
+    width: 21rem;
+    margin-top: 1rem;
+    margin-left: 45rem;
+}
+
+       
+.landingpage-partnership{
+  display: flex;flex-direction: row;justify-content: space-between;
+  margin-left: 4rem; width: 90%;margin-top: 3rem;margin-bottom: 2rem;}
+
+.landingpage-partnership img{width: 100%;height: 100%;object-fit:cover;border-radius: 1rem;}
+.landingpage-partnership h1{position: absolute;color: white;padding-top:  12.5rem;padding-left: 3rem;}
+.landingpage-partnership p{padding-top:  11rem;padding-left: 3rem; font-size: .9rem; color:#ff9900;position: absolute;}       
+
+.landingpage-partnership .upper-div{
+  position: absolute;background: white;
+  margin-left: 3.5rem;height: 3rem;width: 15rem;
+  padding-top: 1rem;border-radius: 0 0 1rem 1rem;
+  font-weight: bold;
+  color: black;text-align: center;}
+
+  .landingpage-partnership .gradient{border-radius: 1rem; width: 100%;height: 100%;position: absolute; 
+  background: linear-gradient(245.7deg, rgba(255, 255, 255, 0) 0.94%, rgba(3, 8, 31, 0.19) 51.68%, rgba(3, 8, 31, 0.89) 87.9%)}
+
+.landingpage-partnership-Partner-with-us{width: 49%;height: 20rem; border-radius: 1rem;position: relative;}
+
+
+.landingpage-partnership-Ride-with-us{width: 49%;height: 20rem; border-radius: 1rem;position: relative;}
+
+
+      .landingpage-knowwmore{height: 40rem;display: flex;
+       margin-left: 4rem; width: 90%;
+
+       background: #D9D9D9;
+       border-radius: 1rem}
+
+       .landingpage-knowwmore-main{display: flex;flex-direction: column;
+        height: 30rem;width: 80%;margin-top: 5rem;margin-left: 7.5rem;border-radius: 1rem;
+    }
+
+
+    .landingpage-knowwmore-link{background: #D9D9D9;height: 6rem;width: 100%;display: flex;flex-direction: row;
+
+    }
+
+    
+.Know-more-about-us{padding-top: 1.9rem; width: 42%;font-size: 1.5rem;font-weight: 800;color: #000;}
+
+.Know-more-about-us p{font-size: .9rem; }
+
+
+
+.Who-we-are{width: 11%; text-align: center;padding-top: 2.2rem;} 
+.Who-we-are p{font-size: .9rem;}
+
+.Partner-Program{width: 17%;text-align: center;padding-top: 2.2rem;} 
+.Partner-Program p{font-size: .9rem;}
+
+
+.Frequent-Questions{width: 18%;
+    height: 48%;
+    border-radius: 5rem;font-weight: bold;
+    text-align: center;
+    padding-top: .6rem;
+    border: .1rem solid #ff9900;
+    margin-top: 1.5rem;} 
+.Frequent-Questions p{font-size: .9rem;}
+
+.Help-Support{width: 11%;text-align: center;padding-top: 2.2rem;} 
+.Help-Support p{font-size: .9rem;}
+
+.landingpage-knowwmore-details{height: 24rem;display: flex;flex-direction: row; border-radius: 1rem;background: white;}
+
+.landingpage-knowwmore-details-left{ width: 40%; text-align: center;}
+
+.landingpage-knowwmore-details-left p{font-weight: bold;margin-bottom: 1.5rem;font-size: 1rem;}
+.landingpage-knowwmore-how-dose-work{width: 17rem;text-align: center;padding-top: 1.3rem;font-weight: bold;
+    border-radius: 2.7rem;
+    height: 3.5rem;margin-bottom: 2rem;
+    background: #ff9900;
+    margin-left: 3.5rem;
+    margin-top: 4rem;}
+
+.landingpage-knowwmore-details-right{width: 60%;position: relative;}
+.landingpage-knowwmore-details-right-upper{height: 70%;display: flex;flex-direction: column;}
+.landingpage-knowwmore-details-right-lower{height: 30%;text-align: center;padding-top: 2rem;}
+.landingpage-knowwmore-details-right-lower p{font-size: .9rem; font-weight: 500;}
+.landingpage-knowwmore-details-right-upper-span{height: 30%;width: 100%;}
+.landingpage-knowwmore-details-right-upper-monitoring{height: 70%;display: flex;flex-direction: row; width: 100%;justify-content:space-around}
+
+.Place-an-Order{width: 29%;background: #D9D9D9;border-radius: 1rem; text-align: center;
+}
+
+.Place-an-Order h1{ font-size: 1rem;margin-top: 1.5rem;margin-bottom: 1rem;}
+.Place-an-Order p {font-size: .8rem;}
+.Place-an-Order img{height: 5rem;width: 5rem;}
+.Track-Progress{width: 29%;background: #D9D9D9;border-radius: 1rem;text-align: center;
+}
+
+.Track-Progress h1 {font-size: 1rem;margin-top: 1.5rem;margin-bottom: 1rem;}
+.Track-Progress p {font-size: .8rem;}
+.Track-Progress img{height: 5rem;width: 5rem;}
+
+.Get-your-Order{width: 29%;background: #D9D9D9;margin-right: 1rem;border-radius: 1rem;text-align: center;
+}
+.Get-your-Order h1{font-size: 1rem;margin-top: 1.5rem;margin-bottom: 1rem;}
+.Get-your-Order img{height: 5rem;width: 5rem;}
+.Get-your-Order p {font-size: .8rem;}
+
+
+.landingpage-statestic{
+height: 7rem;margin-left: 4rem;
+ margin-top: 2.5rem;margin-bottom: 2.5rem;
+ border-radius: 1rem;
+width: 90%;display: flex;flex-direction: row;background: #ff9900;}
+
+.landingpage-statestic-main{
+  width: 100%;margin-top: 1.3rem;height: 4rem;
+  display: flex;flex-direction: row;}
+
+
+.landingpage-statestic-container{ border: 1px solid #FFFFFF ;width: 25%; border-style: hidden hidden hidden solid ;text-align: center;}   
+.landingpage-statestic-container h1{font: 2.7em sans-serif;color: white;} 
+.landingpage-statestic-container p{font-weight: bold;color: white;}                    
