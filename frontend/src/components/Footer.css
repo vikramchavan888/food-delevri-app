@@ -27,7 +27,7 @@ color: #333;
 
 .footer-container {
 display: flex;flex-direction: row;
-height: 12.5rem;
+height: 12.5rem;background: #dfdcdc96;
   gap: 1rem;
 }
 
