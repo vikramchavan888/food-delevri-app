@@ -96,16 +96,65 @@ const { user } = useContext(UserContext);
             <div className="gradient"></div>
             <p>Restaurant</p>
             <h4>Grand Ai Cafe London</h4>
-            <img src="https://res.cloudinary.com/dlwpgtmcn/image/upload/v1732368003/Rectangle_8_grurom.png" />
+            <img src="https://res.cloudinary.com/dlwpgtmcn/image/upload/v1733331859/Screenshot_13_yjzt9o.png" />
           </div>
           <div className="landingpage-deals-Butterbrot-CafeLondon">
             <div className="gradient"></div>
             <p>Restaurant</p>
             <h4>Butterbrot Cafe London</h4>
-            <img src="https://res.cloudinary.com/dlwpgtmcn/image/upload/v1732368010/dealimga_qgsunp.png" />
+            <img src="https://res.cloudinary.com/dlwpgtmcn/image/upload/v1733331859/Screenshot_14_mermiu.png" />
           </div>
         </div>
       </div>
+
+      <div className="landingpage-deals-links-mediaq">
+        <div className="Up-to-40-mediaq">
+          Up to -40% Discount Offers&nbsp;
+          <img src="https://res.cloudinary.com/dlwpgtmcn/image/upload/v1732364469/Screenshot_4_r5vecb.png" />
+        </div>
+
+        <select className="Pizza-Fast-food-mediaq">
+          <option>Pizza & Fast food</option>
+          <option>Vagan</option>
+          <option>Shushi</option>
+          <option>others</option>
+        </select>
+      </div>
+
+      <div className="Popular-Restaurants-deals">
+        <div className="resturent-Navigation-deals">
+          <div className="resturents-deals">
+            <div className="resturentimg-deals">
+              <img src="https://res.cloudinary.com/dlwpgtmcn/image/upload/v1733331859/Screenshot_14_mermiu.png" />
+            </div>
+            <div className="resturentname-deals">
+              <p>Restaurant</p>
+              <h4>Chef Burgers London</h4>
+            </div>
+          </div>
+
+          <div className="resturents-deals">
+            <div className="resturentimg-deals">
+              <img src="https://res.cloudinary.com/dlwpgtmcn/image/upload/v1733331859/Screenshot_13_yjzt9o.png" />
+            </div>
+            <div className="resturentname-deals">
+              <p>Restaurant</p>
+              <h4>Chef Burgers London</h4>
+            </div>
+          </div>
+
+          <div className="resturents-deals">
+            <div className="resturentimg-deals">
+              <img src="https://res.cloudinary.com/dlwpgtmcn/image/upload/v1733331859/Screenshot_14_mermiu.png" />
+            </div>
+            <div className="resturentname-deals">
+              <p>Restaurant</p>
+              <h4>Chef Burgers London</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="landingpage-menu-catagoery">
         <h2>Order uk Popular Categories 🤩</h2>
         <div className="landingpage-menu-catagoery-Navigation">

@@ -640,10 +640,69 @@ height: auto;
 }
 
 
+.landingpage-deals{display: none;}
+
+
+
+.landingpage-menu-catagoery h2 {
+    margin: 1rem 0 0 0;
+    color: black;
+}
+
+
+
+.landingpage-deals-links-mediaq{height:5rem;width: 100%;display: flex;flex-direction: row;margin: 1rem;}
+.Pizza-Fast-food-mediaq{
+    height: 44%;
+    border-radius: 5rem;
+    text-align: center;
+   
+    color: black;
+    border: .1rem solid black;
+    margin-top: 1.5rem;
+}
+
+    select{text-decoration: none;}
+
+.Up-to-40-mediaq{padding-top: 1.5rem;
+    margin-right: 1rem;
+    font-size: .8rem;
+    font-weight: 800;
+    color: #000;}
+.Up-to-40-mediaq img{height: 1.3rem; width: 1.3rem;}
+.Up-to-40-mediaq p{font-size: .9rem;}
 
 
 
 
+.Popular-Restaurants-deals{
+    height: 16rem;margin:.5rem 0 0 0; max-width: 100%;display: flex; flex-wrap: nowrap;overflow-x: scroll;
+}
+  
+.resturent-Navigation-deals{
+   height: 90%;display: flex;flex-direction: row;justify-content: space-between;
+    
+}
+
+
+.resturents-deals{
+    height: 15rem; margin-right: 1rem;
+    
+    border-radius: 1rem;
+    width: 9.5rem;
+}
+
+.resturentimg-deals{
+    height: 60%;
+}
+.resturentname-deals h4{color: black;}
+.resturentname-deals p{color: #FC8A06;}
+.resturentname-deals{
+    height: 40%;background:white; border-radius:  0 0 1rem 1rem; font-weight: bold; color: white;padding-left: 1rem;
+    padding-top: .8rem;
+
+}
+.resturents-deals img{width: 100%;height: 100%;object-fit:fill;border-radius: 1rem 1rem 0 0;}
 
 
 .landingpage-menu-catagoery h2 {
@@ -651,88 +710,7 @@ height: auto;
   
     color: black;
 }
-    .landingpage-menu-catagoery h2 {
-        margin: 2rem 0 0 1rem;
-        color: #000;
-    }
-
-    .landingpage-deals {
-    display: flex;
-    height: 13rem;
-    flex-direction: column;
-    margin:0;
-    width: 100%;
- 
-}
 
 
-.landingpage-deals-Chef-Burgers-London {
-    height: 10rem; margin-right: 1rem;
-    margin-top: 0;
-    border-radius: 1rem;
-    width: 9.5rem;
-    position: relative;}
-
-
-
-.landingpage-deals-Butterbrot-CafeLondon {
-     height: 10rem; margin-right: 1rem;
-    margin-top: 0;
-    border-radius: 1rem;
-    width: 9.5rem;
-    position: relative;}
-
-
-
-
-.landingpage-deals-Grand-Ai-Cafe-London{
-    
-      height: 10rem; margin-right: 1rem;
-    margin-top: 0;
-    border-radius: 1rem;
-    width: 9.5rem;
-    position: relative;}
-
-
-
-
-
-
-.landingpage-deals-options h4 {
-    position: absolute;
-    color: white;font-size: small;
-    padding-top: 5rem;
-    padding-left: 2rem;
-}
-
-.landingpage-deals-options {
-
-
-
-      height: 13rem; width: 100%;display: flex; flex-direction: row; flex-wrap: nowrap;overflow-x: scroll;
-}
-
-.landingpage-deals-options p {
-    padding-top: 6rem;
-    padding-left: 1rem;
-    font-size: 0.9rem;
-    color: #ff9900;
-    position: absolute;
-}
-
-.landingpage-deals-options .upper-div {
-    position: absolute;
-    background: black;
-    margin-left: 1rem; 
-    height: 3rem;
-    width: 5rem;
-    padding-top: 1rem;
-    border-radius: 0 0 1rem 1rem;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-}
-
-
-
+.landingpage-deals{display: none;}
 }
