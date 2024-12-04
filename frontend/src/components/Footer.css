@@ -1,9 +1,4 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: Arial, sans-serif;
@@ -20,20 +15,25 @@ ul {
 }
 
 
-footer {
- background: #dfdcdc96;
-
-  padding: 2rem 0 0 0 ;
-  color: #333;
+.footer-main{
+  padding: 2rem 0 2rem 0;
+width: 100%;
+height: 20.4rem;
+background: #dfdcdc96;
+color: #333;
 }
 
+
+
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+display: flex;flex-direction: row;
+height: 12.5rem;
   gap: 1rem;
 }
 
+.deal-section{width: 30%; height:100% ;}
+.footer-logo-section{width: 35%;}
+.links-section{width: 17.5%;}
 
 .footer-logo-section h1 {
   font-size: 1.8rem;
@@ -61,7 +61,7 @@ footer {
   margin-bottom: 1rem;
 }
 .deal-email { 
-  display: flex;
+  display: flex;width: 20rem;
  border-radius:2.7rem;height:2.7rem;
 background: #cecbcb;
 
@@ -135,4 +135,96 @@ width: 100%; height: 4.5rem;
 
 .footer-bottom  a:hover {
   color: #ff9900;
+
+
+}
+
+
+
+
+@media (max-width: 480px) {
+
+
+.footer-container {
+display: flex;flex-direction: column;
+height: auto;
+  gap: 1rem;
+}
+
+
+.footer-main{width: 100%;height: auto;padding: 1.5rem 0 0 0;
+ background: #dfdcdc96;
+  color: #333;
+}
+
+.deal-section{height: auto;width: 100%; padding: 1rem; text-align: center;}
+
+.deal-section h3 {text-align: start;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.deal-email{margin: 0 1rem 0 1rem;     display: flex;
+width: auto;
+    border-radius: 2.7rem;
+    height: 2.7rem;
+    background: #cecbcb;}
+
+    .subscribe-btn{margin-left: 13%;}
+
+.links-section{height: auto;width: 100%; padding: 1rem;}
+
+
+.footer-logo-section{width: 100%; padding: 1rem; text-align: center;margin-top: 1rem;}
+.footerimg{margin-bottom: 1rem;  padding: 0;height: 4rem;
+        width: 13rem; }
+
+.app-links{
+height: 3rem;
+padding: 0;
+}
+
+.app-links img{
+width: 100%;height: 100%;object-fit: cover;border-radius: .5rem;
+}
+
+.footer-logo-section p {
+margin-top: 1rem;
+    font-size: 0.9rem;
+    padding:0;
+    color: #666;}
+
+
+.youremaigmailcom{padding-left: 1.2rem;
+   
+font-size: 15px;
+font-weight: 400;
+color: #666;
+line-height: 43px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+
+.footer-bottom-links{display: none;}
+
+.All-Rights-Reserved{text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
