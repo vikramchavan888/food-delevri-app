@@ -607,12 +607,14 @@ height: auto;
 }
 
 .landingpage-menu-catagoery {
-  height: 41rem;background: #D9D9D980;
-        margin:  0;
+       height: auto;
+        background: #D9D9D980;
+        margin: 1rem 0 1rem 0;
         width: 100%;
-        border-radius: 1rem;
+        border-radius: 0
+    }
 
-}
+
 .landingpage-menu-catagoery-Navigation {
     width: 100%;
     display: flex;flex-wrap: wrap;justify-content: center;
