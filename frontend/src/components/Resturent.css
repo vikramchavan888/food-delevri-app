@@ -22,3 +22,21 @@
 }
 .Popular-Restaurants h2{ margin-left: 1rem;margin-bottom: 2rem;color: black;
 }
+
+
+
+@media (max-width: 480px) {
+
+.Popular-Restaurants{
+    height: 13rem;margin:.5rem 0 0 0; max-width: 100%;display: flex; flex-wrap: nowrap;overflow-x: scroll;
+}
+    
+::-webkit-scrollbar{display: none;
+}
+.resturents {
+    height: 11rem; margin-right: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    width: 9.5rem;
+}
+}

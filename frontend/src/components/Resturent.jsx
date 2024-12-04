@@ -27,11 +27,12 @@ const fetchResturent = async () => {
   }, []);
   return (
     <>
-      <div className="Popular-Restaurants">
+      <div>
         <h2>Popular Restaurants</h2>
-
+      </div>
+      <div className="Popular-Restaurants">
         <div className="resturent-Navigation">
-          {data.map((item,i) => (
+          {data.map((item, i) => (
             <Link
               style={{ textDecoration: "none", color: "none" }}
               to={item.link}
@@ -45,7 +46,7 @@ const fetchResturent = async () => {
             </Link>
           ))}
         </div>
-        <ToastContainer/>
+        <ToastContainer />
       </div>
     </>
   );
