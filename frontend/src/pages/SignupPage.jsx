@@ -63,8 +63,8 @@ const SignupPage = () => {
   return (
     <>
       <div className="main-container">
-        <div className="upper-container">
-          <div class="left-section">
+        <div className="signup-upper-container">
+          <div class="signup-left-section">
             <form onSubmit={handleSignup} className="signupform">
               <img
                 className="order-img"
@@ -134,7 +134,7 @@ const SignupPage = () => {
                 class="login-register-btn"
                 style={{ textDecoration: "none" }}
               >
-                loginsup
+                &nbsp;login
               </Link>
             </p>
           </div>
