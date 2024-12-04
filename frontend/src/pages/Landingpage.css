@@ -385,7 +385,7 @@ height: auto;
 
 .landingpage-knowwmore-details {
     height: auto;
-    display: flex;padding: 1rem;
+    display: flex;padding: 0;
     flex-direction: column;
     border-radius: 1rem;
     background: white;
@@ -402,7 +402,7 @@ height: auto;
         height: 3.5rem;
         margin-bottom: 2rem;
         background: #ff9900;
-        margin: 0 1rem 1rem 1rem;
+        margin: 0 2rem 1rem 2rem;
 
     }
   
@@ -559,8 +559,7 @@ height: auto;
     height: 30rem;
     margin:1rem;
     width: 90%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+   
     border-radius: 1rem;
 }
 .landindpage-banner-two-second-img {
@@ -574,7 +573,7 @@ height: auto;
 
 
     .landindpage-media-q-image{
-           display: block;
+        display: block;
         width: 13rem;
         z-index: 2;
         margin-top: 6rem;
@@ -599,8 +598,59 @@ height: auto;
     margin-top: 1rem;
     margin-left: 3rem;}
 
+
+
+    .landingpage-menu-catagoery-item {
+    height: 10rem;
+    border-radius: 1rem;
+    width: 10.5rem;
+}
+
+.landingpage-menu-catagoery {
+  height: 41rem;background: #D9D9D980;
+        margin:  0;
+        width: 100%;
+        border-radius: 1rem;
+
+}
+.landingpage-menu-catagoery-Navigation {
+    width: 100%;
+    display: flex;flex-wrap: wrap;justify-content: center;
+   gap: 1rem;}
+
+
+.landingpage-menu-catagoery-item-name {
+    border-radius: 0 0 1rem 1rem;
+    font-weight: bold;
+    color: #FC8A06;
+    font-size: .9rem;
+    background:#03081F;
+    border: 1px solid #0000001A;
+    padding-top: .8rem;
+    padding-left: 1rem;
+}
+
+.landingpage-menu-catagoery h6 {
+    margin-bottom: 1rem;
+    font-size: .7rem;
+    color: white;
+
 }
 
 
 
+
+
+
+
+
+.landingpage-menu-catagoery h2 {
+    margin: 1rem 0 0 0;
   
+    color: black;
+
+}
+
+
+
+}
