@@ -3,6 +3,8 @@
     text-align: center;padding-top: .8rem;
 
 }
+.Popular-Restaurants-heading{margin-top: 1rem;margin-left: 4rem;
+        font-size: 1rem;}
 
 .resturentimg{
     height: 79%;
@@ -39,4 +41,6 @@
     border-radius: 1rem;
     width: 9.5rem;
 }
+.Popular-Restaurants-heading{margin-top: 1rem;margin-left: 1rem;
+        font-size: 1rem;}
 }
