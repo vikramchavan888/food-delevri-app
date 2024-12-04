@@ -32,7 +32,7 @@ const SignupPage = () => {
           return handleError(" email ,address and password are required");
         }
         try {
-          const url = `http://localhost:3000/auth/signup`;
+          const url = `https://food-delevri-app.vercel.app/auth/signup`;
           const response = await fetch(url, {
             method: "POST",
             headers: {

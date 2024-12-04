@@ -24,13 +24,11 @@ const Shaurmaone = () => {
  const [searchTerm, setSearchTerm] = useState("");
  useEffect(() => {
    if (!user) {
-     // Redirect to login if user is not logged in
      navigate("/login");
    }
  }, [user, navigate]);
 
  if (!user) {
-   // Optional: Render nothing or a loading placeholder
    return null;
  }
 
@@ -42,7 +40,9 @@ const Shaurmaone = () => {
  useEffect(() => {
    const fetchFoodItems = async () => {
      try {
-       const response = await fetch("http://localhost:3000/getFooditems");
+       const response = await fetch(
+         `https://food-delevri-app.vercel.app/getFooditems`
+       );
        const data = await response.json();
 
        const grouped = data.reduce((acc, item) => {

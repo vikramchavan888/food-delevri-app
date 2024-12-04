@@ -49,7 +49,7 @@ const ManageAddress = () => {
   const fetchAddresses = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/auth/addresses/${userId}`
+        `https://food-delevri-app.vercel.app/auth/addresses/${userId}`
       );
       setAddresses(response.data.addresses || []);
     } catch (error) {
@@ -62,7 +62,7 @@ const ManageAddress = () => {
       if (currentAddress._id) {
         // Update existing address
         await axios.put(
-          `http://localhost:3000/auth/update-address/${userId}/${currentAddress._id}`,
+          `https://food-delevri-app.vercel.app/auth/update-address/${userId}/${currentAddress._id}`,
           currentAddress
         );
         setAddresses((prevAddresses) =>
@@ -76,7 +76,7 @@ const ManageAddress = () => {
       } else {
         // Add new address
         const response = await axios.post(
-          `http://localhost:3000/auth/add-address/${userId}`,
+          `https://food-delevri-app.vercel.app/auth/add-address/${userId}`,
           currentAddress
         );
         setAddresses((prevAddresses) => [...prevAddresses, response.data]);
@@ -180,7 +180,7 @@ const ManageAddress = () => {
                   onClick={async () => {
                     try {
                       await axios.delete(
-                        `http://localhost:3000/auth/delete-address/${userId}/${address._id}`
+                        `https://food-delevri-app.vercel.app/auth/delete-address/${userId}/${address._id}`
                       );
                       setAddresses((prevAddresses) =>
                         prevAddresses.filter((item) => item._id !== address._id)

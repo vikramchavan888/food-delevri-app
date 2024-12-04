@@ -13,12 +13,12 @@ export const UserProvider = ({ children }) => {
 
     if (token && userId) {
       axios
-        .get(`http://localhost:3000/auth/${userId}`, {
+        .get(`https://food-delevri-app.vercel.app/auth/${userId}`, {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then((response) => {
           if (response.data && response.data.data) {
-            setUser(response.data.data); 
+            setUser(response.data.data);
           }
         })
         .catch((error) => console.error("Error fetching user data:", error))

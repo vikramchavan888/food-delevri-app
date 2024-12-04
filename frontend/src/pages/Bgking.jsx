@@ -41,7 +41,9 @@ console.log("Search Term: ", searchTerm);
 useEffect(() => {
   const fetchFoodItems = async () => {
     try {
-      const response = await fetch("http://localhost:3000/getFooditems");
+      const response = await fetch(
+        `https://food-delevri-app.vercel.app/getFooditems`
+      );
       const data = await response.json();
 
       const grouped = data.reduce((acc, item) => {

@@ -30,7 +30,7 @@ const { setUser } = useContext(UserContext);
      return handleError(" email ,address and password are required");
    }
    try {
-     const url = `http://localhost:3000/auth/login`;
+     const url = `https://food-delevri-app.vercel.app/auth/login`;
      const response = await fetch(url, {
        method: "POST",
        headers: {

@@ -10,7 +10,7 @@ const [data, setData] = useState([]);
 
 const fetchResturent = async () => {
   try {
-    const url = "http://localhost:3000/getResturent";
+    const url = `https://food-delevri-app.vercel.app/getResturent`;
     const headers = {
       headers: { Authorization: localStorage.getItem("jwttoken") },
     };

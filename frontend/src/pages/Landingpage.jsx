@@ -10,13 +10,13 @@ const Landingpage = () => {
 const { user } = useContext(UserContext);
  useEffect(() => {
    if (!user) {
-     // Redirect to login if user is not logged in
+     
      navigate("/login");
    }
  }, [user, navigate]);
 
  if (!user) {
-   // Optional: Render nothing or a loading placeholder
+   
    return null;
  }
 

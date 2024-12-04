@@ -45,7 +45,7 @@ const UpdateProfile = () => {
   const fetchCards = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/auth/cards/${userId}`
+        `https://food-delevri-app.vercel.app/auth/cards/${userId}`
       );
       setCards(response.data.cards);
     } catch (error) {
@@ -58,7 +58,7 @@ const handleSaveCard = async () => {
     if (currentCard._id) {
       // Update card
       await axios.put(
-        `http://localhost:3000/auth/update-card/${userId}/${currentCard._id}`,
+        `https://food-delevri-app.vercel.app/auth/update-card/${userId}/${currentCard._id}`,
         currentCard
       );
       setCards(
@@ -70,7 +70,7 @@ const handleSaveCard = async () => {
     } else {
       // Add card
       await axios.post(
-        `http://localhost:3000/auth/add-card/${userId}`,
+        `https://food-delevri-app.vercel.app/auth/add-card/${userId}`,
         currentCard
       );
      handleSuccess("Card added successfully:", currentCard);
@@ -88,7 +88,7 @@ const handleSaveCard = async () => {
    try {
      if (currentCard?._id) {
        await axios.delete(
-         `http://localhost:3000/auth/delete-card/${userId}/${currentCard._id}`
+         `https://food-delevri-app.vercel.app/auth/delete-card/${userId}/${currentCard._id}`
        );
        setCards(cards.filter((card) => card._id !== currentCard._id));
        handleSuccess("Card deleted successfully:", currentCard);
@@ -103,7 +103,7 @@ const handleSaveCard = async () => {
   const handleUserInfoUpdate = async () => {
     try {
       const response = await axios.put(
-        `http://localhost:3000/auth/${userId}`,
+        `https://food-delevri-app.vercel.app/auth/${userId}`,
         userInfo
       );
       setUser(response.data.data);
