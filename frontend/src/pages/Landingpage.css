@@ -650,7 +650,87 @@ height: auto;
     margin: 1rem 0 0 0;
   
     color: black;
+}
+    .landingpage-menu-catagoery h2 {
+        margin: 2rem 0 0 1rem;
+        color: #000;
+    }
 
+    .landingpage-deals {
+    display: flex;
+    height: 13rem;
+    flex-direction: column;
+    margin:0;
+    width: 100%;
+ 
+}
+
+
+.landingpage-deals-Chef-Burgers-London {
+    height: 10rem; margin-right: 1rem;
+    margin-top: 0;
+    border-radius: 1rem;
+    width: 9.5rem;
+    position: relative;}
+
+
+
+.landingpage-deals-Butterbrot-CafeLondon {
+     height: 10rem; margin-right: 1rem;
+    margin-top: 0;
+    border-radius: 1rem;
+    width: 9.5rem;
+    position: relative;}
+
+
+
+
+.landingpage-deals-Grand-Ai-Cafe-London{
+    
+      height: 10rem; margin-right: 1rem;
+    margin-top: 0;
+    border-radius: 1rem;
+    width: 9.5rem;
+    position: relative;}
+
+
+
+
+
+
+.landingpage-deals-options h4 {
+    position: absolute;
+    color: white;font-size: small;
+    padding-top: 5rem;
+    padding-left: 2rem;
+}
+
+.landingpage-deals-options {
+
+
+
+      height: 13rem; width: 100%;display: flex; flex-direction: row; flex-wrap: nowrap;overflow-x: scroll;
+}
+
+.landingpage-deals-options p {
+    padding-top: 6rem;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+    color: #ff9900;
+    position: absolute;
+}
+
+.landingpage-deals-options .upper-div {
+    position: absolute;
+    background: black;
+    margin-left: 1rem; 
+    height: 3rem;
+    width: 5rem;
+    padding-top: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
 }
 
 

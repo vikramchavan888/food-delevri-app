@@ -27,7 +27,7 @@ const fetchResturent = async () => {
   }, []);
   return (
     <>
-      <div>
+      <div className="Popular-Restaurants-heading">
         <h2>Popular Restaurants</h2>
       </div>
       <div className="Popular-Restaurants">
