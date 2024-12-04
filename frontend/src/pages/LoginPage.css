@@ -108,7 +108,45 @@ color: #FC8A06;cursor: pointer;
 
 }
 
-/* Media Query for Screens Smaller than 480px */
+
+
+ @media (max-width: 380px) {
+
+
+.right-section{display: none;}
+
+.upper-container{ width: 100%;height: 650px;}
+
+.left-section{width: 100%;  justify-content: center;}
+
+
+
+.loginform {
+    width: 100%;
+    max-width: 400px;
+    display: flex; padding: 2rem 1rem 0 1rem;
+    flex-direction: column;
+}
+
+.order-img{
+       height: 40px;
+        width: 143px;
+        padding: 0;
+        margin: 0 3rem 0 3rem;;
+    }
+
+.Today-is-a-new-day{
+  margin:1rem 0 1rem 0;
+        font-size: 11px;
+        color: #313957;
+    }
+
+
+
+}
+
+
+
 
 
 @media (max-width: 480px) {
@@ -134,6 +172,12 @@ color: #FC8A06;cursor: pointer;
 
 .order-img{
     height:45px;width:300px;padding-left: 4rem; }
+
+.Today-is-a-new-day{
+  margin:1rem 0 1rem 0;
+        font-size: 13px;
+        color: #313957;
+    }
 
 
 
