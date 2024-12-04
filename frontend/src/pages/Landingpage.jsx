@@ -36,10 +36,7 @@ const { user } = useContext(UserContext);
           </div>
           <div className="landingpage-nav-links-Restaurants">Restaurants</div>
           <div className="landingpage-nav-links-TrackOrder">Track Order</div>
-          <div
-           
-            className="landingpage-nav-links-login-signup"
-          >
+          <div className="landingpage-nav-links-login-signup">
             <img src="  https://res.cloudinary.com/dlwpgtmcn/image/upload/v1732345538/Male_User_w8tvn3.png" />
 
             <p>{user.name}</p>
@@ -173,6 +170,10 @@ const { user } = useContext(UserContext);
         />
 
         <div className="landindpage-banner-two-image-backgroung">
+          <img
+            className="landindpage-media-q-image"
+            src="https://res.cloudinary.com/dlwpgtmcn/image/upload/v1733318550/Personalised_Instant_sgqygm.png"
+          />
           <img
             className="landindpage-banner-two-second-img"
             src="https://res.cloudinary.com/dlwpgtmcn/image/upload/v1732376271/orderismore_cnfg8z.png"
