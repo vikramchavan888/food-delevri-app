@@ -51,6 +51,7 @@ const { user } = useContext(UserContext);
           <h6>Enter a postcode to see what we deliver</h6>
           <div className="landindpage-banner-one-postcode-input">
             <span className="egEC4R3TE">e.g. EC4R 3TE</span>
+            <img className="media-q-button" src="https://res.cloudinary.com/dlwpgtmcn/image/upload/v1733336481/Screenshot_15_yndtec.png" />
             <div className="landindpage-banner-one-postcode-btn ">Search</div>
           </div>
         </div>

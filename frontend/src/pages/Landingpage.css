@@ -719,11 +719,75 @@ height: auto;
 
 
 .landingpage-menu-catagoery h2 {
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 0 1rem;
   
     color: black;
 }
 
 .landingpage-nav{display: none;}
 .landingpage-deals{display: none;}
+
+.landingpage-banner-one-first-img{display: none;}
+  .landingpage-banner-one-second-img{ display: none; }
+      .landindpage-banner-one-backgroung{display: none;}
+
+
+
+    .landindpage-banner-one {
+    height: 18rem;
+    display: flex;
+    margin: 1rem;
+    width: 100%;
+    border: 1px solid #00000033;
+    background: #03081F;
+    border-radius: 1rem;}
+
+
+    .landindpage-banner-one-postcode {
+    width: 100%;
+    z-index: 2;text-align: center;
+    margin: 0;
+    }
+
+    .Feast-Your-Senses {
+    font-size: 2rem;color: white;
 }
+
+.landindpage-banner-one-postcode p {
+    margin:2rem 0 1rem 0rem ;
+    font-size: .9rem;color: white;
+}
+
+
+
+.Fast-and-Fresh {
+    font-size: 2rem;
+    color: #ff9900;
+    margin-bottom: 1rem;}
+
+    .landindpage-banner-one-postcode h6 {
+    margin-bottom: 1rem;color: white;
+    font-size: .7rem;}
+
+
+    .landindpage-banner-one-postcode-input {
+    display: flex;
+    width: 17rem;margin-left: 4.5rem;
+    border-radius: 2.7rem;
+    height: 2.7rem;
+    background: white;
+}
+
+
+.landindpage-banner-one-postcode-btn {display: none;}
+.media-q-button{        display: block;
+        margin-top: 0rem;
+        margin-left: 14.5rem;
+        z-index: 5;
+        position: absolute;
+        border-radius: 1rem;
+        height: 2.7rem;
+        width: 2.7rem;
+    }
+}
+
