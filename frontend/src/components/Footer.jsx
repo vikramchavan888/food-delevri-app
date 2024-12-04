@@ -3,8 +3,8 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="footer-container">
+      <div className="footer-main">
+        <div className="footer-container">
         <div className="footer-logo-section">
           <img
             className="footerimg"
@@ -107,7 +107,7 @@ const Footer = () => {
           <a href="#">Do not sell or share my personal information</a>
         </div>
       </div>
-    </footer>
+    </div>
   );
 }
 
