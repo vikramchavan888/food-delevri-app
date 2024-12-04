@@ -737,7 +737,7 @@ height: auto;
     height: 18rem;
     display: flex;
     margin: 1rem;
-    width: 100%;
+    width: 0;
     border: 1px solid #00000033;
     background: #03081F;
     border-radius: 1rem;}
