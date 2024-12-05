@@ -87,7 +87,7 @@ text-align: start; font-size: 1rem ;font-weight: bold ;padding-left: 1rem}
 .search-input-of-all-resdturent input {
     margin: 0 4rem 1rem 0;border: 1px solid black;
     width: 20rem;padding-left: 1rem;
-    border-radius: 2rem;
+    border-radius: 2rem;background:url(https://icons.veryicon.com/png/o/miscellaneous/light-e-treasure-3/search-286.png) no-repeat scroll left center / 25px auto;
     height: 3rem;}
 .links-of-all-resdturent{
   width: 100%;background: #FC8A06;
