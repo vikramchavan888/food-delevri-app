@@ -140,7 +140,7 @@ const Papajohns = () => {
 
       <div className="search-input-of-all-resdturent">
         <span>
-          <h1>All Offers from McDonald’s East London</h1>
+          <h1>All Offers from Papa Johns East London</h1>
           <input
             type="text"
             placeholder="Search food items..."

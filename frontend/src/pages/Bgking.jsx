@@ -137,7 +137,7 @@ const filteredGroupedItems = filteredItems.reduce((acc, item) => {
 
       <div className="search-input-of-all-resdturent">
         <span>
-          <h1>All Offers from McDonald’s East London</h1>
+          <h1>All Offers from Burger King East London</h1>
           <input
             type="text"
             placeholder="Search food items..."
