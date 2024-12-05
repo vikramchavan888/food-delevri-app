@@ -82,7 +82,8 @@
 .texaschiken-nav-links-login-signup p { 
   margin-top: .7rem; 
   margin-left: .5rem; 
-  width: 60%; 
+  width: 60%; height: 1rem;
+
   margin-left: .5rem; 
   overflow: hidden; 
 }
