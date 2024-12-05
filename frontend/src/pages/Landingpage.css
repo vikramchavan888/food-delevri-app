@@ -179,7 +179,7 @@ margin-left: 4rem; width: 90%;
     font-size: 1.3rem;
     margin-top: 2rem;
         }
-
+ .landindpage-media-q-image{display: none};
 
 .landindpage-banner-two-first-img{ width: 40rem;
     height: 31rem;
@@ -191,7 +191,7 @@ margin-left: 4rem; width: 90%;
     z-index: 2;
     margin-top: 5rem;
     z-index: 3;
-    margin-left: 37rem;
+    margin-left: 23rem;
     position: absolute;
     border-radius: 1rem;}
   
