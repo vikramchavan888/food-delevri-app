@@ -103,3 +103,6 @@ text-align: start; font-size: 1rem ;font-weight: bold ;padding-left: 1rem}
 
 .link-of-all-resdturent:hover{background: #03081F;color: white;}
 
+.logout{position: absolute; top: .5rem;left: .5rem;background: none;border: none;cursor: pointer;}
+
+.logout-img{height: 3rem; width: 3rem ;border-radius: 3rem;} 

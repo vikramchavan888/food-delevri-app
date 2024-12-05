@@ -26,7 +26,12 @@ const Home = () => {
     <>
       <div className="navbar">
         <Navbar />
-        <button onClick={handleLogout}>Logout</button>
+        <button className="logout" onClick={handleLogout}>
+          <img
+            className="logout-img"
+            src="https://res.cloudinary.com/dlwpgtmcn/image/upload/v1733375213/logout-glassy-cyan-blue-round-button-isolated-abstract-illustration-97912713_epqqzh.jpg"
+          />
+        </button>
       </div>
 
       <div className="resturent-div">
