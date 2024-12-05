@@ -35,27 +35,6 @@ const MacD = () => {
  }
 
 
- const handleserachBurgers = (e) => {
-   setSearchTerm(burger);
- };
- const handleserachSnacks = (e) => {
-   setSearchTerm(Snacks);
- };
- const handleserachFries = (e) => {
-   setSearchTerm(Fries);
- };
- const handleserachSalads = (e) => {
-   setSearchTerm(Salads);
- };
- const handleserachcolddrink = (e) => {
-   setSearchTerm(colddrink);
- };
- const handleserachHotdrinks = (e) => {
-   setSearchTerm(Hotdrinks);
- };
- const handleserachHappyMeal = (e) => {
-   setSearchTerm(meal);
- };
  const handleSearchChange = (e) => {
    setSearchTerm(e.target.value.toLowerCase());
  };
@@ -170,32 +149,32 @@ const MacD = () => {
         </span>
         <div className="links-of-all-resdturent">
           <div className="link-of-all-resdturent">Offers</div>
-          <div onClick={handleserachBurgers} className="link-of-all-resdturent">
+          <div  className="link-of-all-resdturent">
             Burgers
           </div>
-          <div onClick={handleserachFries} className="link-of-all-resdturent">
+          <div  className="link-of-all-resdturent">
             Fries
           </div>
-          <div onClick={handleserachSnacks} className="link-of-all-resdturent">
+          <div  className="link-of-all-resdturent">
             Snacks
           </div>
-          <div onClick={handleserachSalads} className="link-of-all-resdturent">
+          <div  className="link-of-all-resdturent">
             Salads
           </div>
           <div
-            onClick={handleserachcolddrink}
+            
             className="link-of-all-resdturent"
           >
             Cold drinks
           </div>
           <div
-            onClick={handleserachHotdrinks}
+           
             className="link-of-all-resdturent"
           >
             Hot drinks
           </div>
           <div
-            onClick={handleserachHappyMeal}
+           
             className="link-of-all-resdturent"
           >
             Happy Meal

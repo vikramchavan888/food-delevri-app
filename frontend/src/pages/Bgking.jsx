@@ -33,30 +33,6 @@ const Bgking = () => {
     return null;
   }
 
-const handleserachBurgers = (e) => {
-  setSearchTerm(burger.toLowerCase());
-};
-const handleserachSnacks = (e) => {
-  setSearchTerm(Snacks.toLowerCase());
-};
-const handleserachFries = (e) => {
-  setSearchTerm(Fries.toLowerCase());
-};
-const handleserachSalads = (e) => {
-  setSearchTerm(Salads.toLowerCase());
-};
-const handleserachcolddrink = (e) => {
-  setSearchTerm(colddrink.toLowerCase());
-};
-const handleserachHotdrinks = (e) => {
-  setSearchTerm(Hotdrinks.toLowerCase());
-};
-const handleserachHappyMeal = (e) => {
-  setSearchTerm(meal.toLowerCase());
-};
-
-
-
 
 const handleSearchChange = (e) => {
   setSearchTerm(e.target.value.toLowerCase());
@@ -172,32 +148,32 @@ const filteredGroupedItems = filteredItems.reduce((acc, item) => {
         </span>
         <div className="links-of-all-resdturent">
           <div className="link-of-all-resdturent">Offers</div>
-          <div onClick={handleserachBurgers} className="link-of-all-resdturent">
+          <div className="link-of-all-resdturent">
             Burgers
           </div>
-          <div onClick={handleserachFries} className="link-of-all-resdturent">
+          <div className="link-of-all-resdturent">
             Fries
           </div>
-          <div onClick={handleserachSnacks} className="link-of-all-resdturent">
+          <div className="link-of-all-resdturent">
             Snacks
           </div>
-          <div onClick={handleserachSalads} className="link-of-all-resdturent">
+          <div className="link-of-all-resdturent">
             Salads
           </div>
           <div
-            onClick={handleserachcolddrink}
+            
             className="link-of-all-resdturent"
           >
             Cold drinks
           </div>
           <div
-            onClick={handleserachHotdrinks}
+           
             className="link-of-all-resdturent"
           >
             Hot drinks
           </div>
           <div
-            onClick={handleserachHappyMeal}
+            
             className="link-of-all-resdturent"
           >
             Happy Meal
