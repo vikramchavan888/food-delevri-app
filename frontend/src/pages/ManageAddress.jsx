@@ -200,6 +200,10 @@ const ManageAddress = () => {
 
         {showCardPopup && (
           <div className="edit-address-popup">
+            <div
+              onClick={() => setShowCardPopup(false)}
+              className="Form-wrapper"
+            ></div>
             <div className="popup-content">
               <h3>{currentAddress?._id ? "Edit Address" : "Add Address"}</h3>
               <span>
