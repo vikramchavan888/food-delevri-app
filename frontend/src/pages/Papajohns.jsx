@@ -14,66 +14,91 @@ import { useCart } from "../context/CartContext";
 
 const Papajohns = () => {
 
+ const [foodItems, setFoodItems] = useState([]);
+ const [groupedItems, setGroupedItems] = useState({});
+ const { dispatch } = useCart();
 
-const [foodItems, setFoodItems] = useState([]);
-const [groupedItems, setGroupedItems] = useState({});
-const { dispatch } = useCart();
-  
-  const { isBasketVisible } = useContext(BasketContext);
-  const navigate = useNavigate();
-  const { user } = useContext(UserContext);
+ const { isBasketVisible } = useContext(BasketContext);
+ const navigate = useNavigate();
+ const { user } = useContext(UserContext);
 
-  const [searchTerm, setSearchTerm] = useState("");
-     useEffect(() => {
-       if (!user) {
-         navigate("/login");
-       }
-     }, [user, navigate]);
+ const [searchTerm, setSearchTerm] = useState("");
+ useEffect(() => {
+   if (!user) {
+     navigate("/login");
+   }
+ }, [user, navigate]);
 
-     if (!user) {
-       return null;
+ if (!user) {
+   return null;
+ }
+ const handleserachBurgers = (e) => {
+   setSearchTerm(burger);
+ };
+ const handleserachSnacks = (e) => {
+   setSearchTerm(Snacks);
+ };
+ const handleserachFries = (e) => {
+   setSearchTerm(Fries);
+ };
+ const handleserachSalads = (e) => {
+   setSearchTerm(Salads);
+ };
+ const handleserachcolddrink = (e) => {
+   setSearchTerm(colddrink);
+ };
+ const handleserachHotdrinks = (e) => {
+   setSearchTerm(Hotdrinks);
+ };
+ const handleserachHappyMeal = (e) => {
+   setSearchTerm(meal);
+ };
+
+ const handleSearchChange = (e) => {
+   setSearchTerm(e.target.value.toLowerCase());
+ };
+ console.log("Search Term: ", searchTerm);
+
+ useEffect(() => {
+   const fetchFoodItems = async () => {
+     try {
+       const response = await fetch(
+         `https://food-delevri-app.vercel.app/getFooditems`
+       );
+       const data = await response.json();
+
+       const grouped = data.reduce((acc, item) => {
+         if (!acc[item.category]) acc[item.category] = [];
+         acc[item.category].push(item);
+         return acc;
+       }, {});
+
+       setFoodItems(data);
+       setGroupedItems(grouped);
+     } catch (error) {
+       console.error("Error fetching food items:", error);
      }
+   };
 
-  const handleSearchChange = (e) => {
-    setSearchTerm(e.target.value.toLowerCase());
-  };
-      console.log("Search Term: ", searchTerm);
-
-      useEffect(() => {
-        const fetchFoodItems = async () => {
-          try {
-            const response = await fetch(
-              `https://food-delevri-app.vercel.app/getFooditems`
-            );
-            const data = await response.json();
-
-            const grouped = data.reduce((acc, item) => {
-              if (!acc[item.category]) acc[item.category] = [];
-              acc[item.category].push(item);
-              return acc;
-            }, {});
-
-            setFoodItems(data);
-            setGroupedItems(grouped);
-          } catch (error) {
-            console.error("Error fetching food items:", error);
-          }
-        };
-
-        fetchFoodItems();
-      }, []);
+   fetchFoodItems();
+ }, []);
 
  const handleAddToCart = (item) => {
-   // Check if the item already exists in the cart
-   const itemExists = cartItems.find((cartItem) => cartItem._id === item._id);
-
-   if (itemExists) {
-     console.log(`Item "${item.name}" already exists in the cart.`);
-   } else {
-     dispatch({ type: "ADD_TO_CART", payload: item });
-     console.log(`Item "${item.name}" has been added to the cart.`);
-   }
+   dispatch({ type: "ADD_TO_CART", payload: item });
  };
+
+ // Filter foodItems based on searchTerm
+ const filteredItems = foodItems.filter(
+   (item) => item.name.toLowerCase().includes(searchTerm) // Case-insensitive match
+ );
+
+ // Group filtered items by category
+ const filteredGroupedItems = filteredItems.reduce((acc, item) => {
+   if (!acc[item.category]) acc[item.category] = [];
+   acc[item.category].push(item);
+   return acc;
+ }, {});
+
 
 
   return (
@@ -133,13 +158,54 @@ const { dispatch } = useCart();
         </div>
       </div>
 
-      <input
-        type="text"
-        placeholder="Search food items..."
-        name="search"
-        value={searchTerm}
-        onChange={handleSearchChange}
-      />
+      <div className="search-input-of-all-resdturent">
+        <span>
+          <h1>All Offers from McDonald’s East London</h1>
+          <input
+            type="text"
+            placeholder="Search food items..."
+            name="search"
+            value={searchTerm}
+            onChange={handleSearchChange}
+          />
+        </span>
+        <div className="links-of-all-resdturent">
+          <div className="link-of-all-resdturent">Offers</div>
+          <div onClick={handleserachBurgers} className="link-of-all-resdturent">
+            Burgers
+          </div>
+          <div onClick={handleserachFries} className="link-of-all-resdturent">
+            Fries
+          </div>
+          <div onClick={handleserachSnacks} className="link-of-all-resdturent">
+            Snacks
+          </div>
+          <div onClick={handleserachSalads} className="link-of-all-resdturent">
+            Salads
+          </div>
+          <div
+            onClick={handleserachcolddrink}
+            className="link-of-all-resdturent"
+          >
+            Cold drinks
+          </div>
+          <div
+            onClick={handleserachHotdrinks}
+            className="link-of-all-resdturent"
+          >
+            Hot drinks
+          </div>
+          <div
+            onClick={handleserachHappyMeal}
+            className="link-of-all-resdturent"
+          >
+            Happy Meal
+          </div>
+          <div className="link-of-all-resdturent">Desserts</div>
+          <div className="link-of-all-resdturent">Sauces</div>
+          <div className="link-of-all-resdturent">Orbit®</div>
+        </div>
+      </div>
       <div className="papajohns-tem-cart">
         <div className="papajohns-landingpage">
           <div className="papajohns-deals-options">

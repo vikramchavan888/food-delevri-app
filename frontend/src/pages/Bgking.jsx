@@ -24,15 +24,40 @@ const Bgking = () => {
   
   useEffect(() => {
     if (!user) {
-      // Redirect to login if user is not logged in
       navigate("/login");
     }
   }, [user, navigate]);
 
   if (!user) {
-    // Optional: Render nothing or a loading placeholder
+   
     return null;
   }
+
+const handleserachBurgers = (e) => {
+  setSearchTerm(burger);
+};
+const handleserachSnacks = (e) => {
+  setSearchTerm(Snacks);
+};
+const handleserachFries = (e) => {
+  setSearchTerm(Fries);
+};
+const handleserachSalads = (e) => {
+  setSearchTerm(Salads);
+};
+const handleserachcolddrink = (e) => {
+  setSearchTerm(colddrink);
+};
+const handleserachHotdrinks = (e) => {
+  setSearchTerm(Hotdrinks);
+};
+const handleserachHappyMeal = (e) => {
+  setSearchTerm(meal);
+};
+
+
+
+
 const handleSearchChange = (e) => {
   setSearchTerm(e.target.value.toLowerCase());
 };
@@ -66,12 +91,11 @@ const handleAddToCart = (item) => {
   dispatch({ type: "ADD_TO_CART", payload: item });
 };
 
-// Filter foodItems based on searchTerm
+
 const filteredItems = foodItems.filter(
   (item) => item.name.toLowerCase().includes(searchTerm) // Case-insensitive match
 );
 
-// Group filtered items by category
 const filteredGroupedItems = filteredItems.reduce((acc, item) => {
   if (!acc[item.category]) acc[item.category] = [];
   acc[item.category].push(item);
@@ -135,13 +159,54 @@ const filteredGroupedItems = filteredItems.reduce((acc, item) => {
         </div>
       </div>
 
-      <input
-        type="text"
-        placeholder="Search food items..."
-        name="search"
-        value={searchTerm}
-        onChange={handleSearchChange}
-      />
+      <div className="search-input-of-all-resdturent">
+        <span>
+          <h1>All Offers from McDonald’s East London</h1>
+          <input
+            type="text"
+            placeholder="Search food items..."
+            name="search"
+            value={searchTerm}
+            onChange={handleSearchChange}
+          />
+        </span>
+        <div className="links-of-all-resdturent">
+          <div className="link-of-all-resdturent">Offers</div>
+          <div onClick={handleserachBurgers} className="link-of-all-resdturent">
+            Burgers
+          </div>
+          <div onClick={handleserachFries} className="link-of-all-resdturent">
+            Fries
+          </div>
+          <div onClick={handleserachSnacks} className="link-of-all-resdturent">
+            Snacks
+          </div>
+          <div onClick={handleserachSalads} className="link-of-all-resdturent">
+            Salads
+          </div>
+          <div
+            onClick={handleserachcolddrink}
+            className="link-of-all-resdturent"
+          >
+            Cold drinks
+          </div>
+          <div
+            onClick={handleserachHotdrinks}
+            className="link-of-all-resdturent"
+          >
+            Hot drinks
+          </div>
+          <div
+            onClick={handleserachHappyMeal}
+            className="link-of-all-resdturent"
+          >
+            Happy Meal
+          </div>
+          <div className="link-of-all-resdturent">Desserts</div>
+          <div className="link-of-all-resdturent">Sauces</div>
+          <div className="link-of-all-resdturent">Orbit®</div>
+        </div>
+      </div>
       <div className="bgking-tem-cart">
         <div className="bgking-landingpage">
           <div className="bgking-deals-options">
@@ -237,7 +302,6 @@ const filteredGroupedItems = filteredItems.reduce((acc, item) => {
 
         {isBasketVisible && <Cart />}
       </div>
-
       <Informationandtime />
       <div className="Map-div">
         <div className="Map-div-resturan-location-details">

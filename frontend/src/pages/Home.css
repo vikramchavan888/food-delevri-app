@@ -75,3 +75,31 @@ border-radius: 1rem;
 
 .foodlist-category-item-info-price{height: 26%;width:100% ;
 text-align: start; font-size: 1rem ;font-weight: bold ;padding-left: 1rem}
+
+
+
+
+.search-input-of-all-resdturent{
+  width: 100%;margin: 4rem 0 2rem 0;
+  height: 8rem;
+}
+.search-input-of-all-resdturent span{margin: 0 4rem 0 4rem;display: flex;flex-direction: row;justify-content: space-between;height: 4rem;}
+.search-input-of-all-resdturent input {
+    margin: 0 4rem 1rem 0;border: 1px solid black;
+    width: 20rem;padding-left: 1rem;
+    border-radius: 2rem;
+    height: 3rem;}
+.links-of-all-resdturent{
+  width: 100%;background: #FC8A06;
+  padding:  0 4rem 0 4rem;display: flex;flex-direction: row;
+}
+
+.link-of-all-resdturent{padding: .4rem .5rem .4rem .5rem;
+    font-weight: bold;
+    margin: 1rem;transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 1rem;
+    }
+
+.link-of-all-resdturent:hover{background: #03081F;color: white;}
+
