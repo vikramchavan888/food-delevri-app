@@ -1,11 +1,3 @@
-
-.Form-wrapper{
-  position: fixed;z-index:4;
-   left: 0;right: 0;bottom: 0;top: 0;background-color: #2F2F2FBF;
-   ;
-  }
-  
-
 .edit-address-popup{
   position: fixed;
   top: 0;
@@ -19,57 +11,62 @@
   z-index: 1000;
 }
 
-.popup-content {
+.Form-wrapper{
+  position: fixed;z-index:4;
+   left: 0;right: 0;bottom: 0;top: 0;background-color: #2F2F2FBF;
+   ;
+  }
+  
+.popup-content-address {
   background: #fff;
-  padding: 1rem;z-index: 6;
-  border-radius: 1rem 1rem 0 0;
-  width: 34rem;
-
+  padding: 1rem;z-index: 5;
+  border-radius: 1rem ;
+  width: 60rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.popup-content h3 {
+.popup-content-adresss h3 {
   margin-bottom: 20px;
 }
 
-.popup-content span{ display: flex;flex-direction: row;}
-.popup-content label{ width: 25%; padding-top: 1.5rem;}
-.addressinput{
-  width: 75%;
+.popup-content-address span{ display: flex;flex-direction: row; justify-content: space-between;}
+
+.address-input{
+  width: 23%;height: 2.5rem;
   margin: 10px 0;
   padding: .5rem;
-  border: 2px solid #0000001A;
+  border: 1px solid #0000001A;
   border-radius: 4px;
 }
 
-.popup-content button {
-  margin: 10px 5px 0 0;
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: white;
-  border: none;
+.fulladdress-input{
+  width: 100%;height: 8rem;
+  margin: 10px 0;
+  padding: .5rem;vertical-align: top;
+  border: 1px solid #0000001A;
   border-radius: 4px;
-  cursor: pointer;
 }
+
+
+
 .manageaddress-My-Profile{cursor: pointer;
     margin-left: 6rem;margin-bottom: 2rem;
     font-weight: bold;
     margin-top: 2rem;}
-.address-delete-btn{border: none;border-radius: .5rem; height: 3rem; background:rgba(102, 55, 0, 1) ; width: 5.5rem;color: white;text-align: center;}
-.address-save-btn{border: none;border-radius: .5rem; height: 3rem;font-weight: bold; background:white ; width: 8.5rem;color: black;text-align: center;}
 
-.address-Cancel-btn{border: none; height: 3rem; background:transparent ; width: 5.5rem;color: white;text-align: center;}
 
-.popup-content button:hover {
-  background-color: #0056b3;
-}
+.address-save-btn{    border: none;
+    border-radius: .5rem;
+    height: 3rem;margin-left: 49.5rem;
+    font-weight: bold;
+    background: #ff9900;
+    width: 8.5rem;
+    color: #ffffff;
+    text-align: center;}
 
-.popup-content button:last-of-type {
-  background-color: #dc3545;
-}
 
-.popup-content button:last-of-type:hover {
-  background-color: #a71d2a;
-}
+
+
 
 .default-tag {
    position: absolute;
@@ -96,7 +93,7 @@
 
 .updateprofile-addresss-container{flex-direction: row;
     display: flex;
-    gap: 20px;justify-content: start;
+    gap: 20px;justify-content:start;
     flex-wrap: wrap;}
 
 
@@ -122,31 +119,6 @@
 
 
 
-.userinput:focus{ border: 1px solid #0000001A; border-radius: .5rem;}
-.update-profile-container select:focus{ border: 1px solid #0000001A; border-radius: .5rem;}
-.user-info-form-upperdiv img{height: 5rem;width :5rem}
-.user-info-form-upperdiv button{ height: 2rem;width: 4rem;border-radius: .5rem; background: rgba(252, 138, 6, 1);color: white;border: none;}
-
-.user-info-form-upperdiv{display: flex;flex-direction: row;justify-content: space-between;}
-.user-info-form-upperdiv span{display: flex;flex-direction: row;}
-.user-info-form-upperdiv  h3{padding-top: 2rem;padding-left: .5rem;}
-.user-info-form-middlediv{display: flex;flex-direction: row;justify-content: space-between;}
-.user-info-form-middlediv span{display: flex;flex-direction: column;width: 48%;}
-.user-info-form-loverdiv{display: flex;flex-direction: row;justify-content: space-between;    border: 1px solid;
-    border-style: hidden hidden solid hidden;padding-bottom: 2rem;}
-.user-info-form-loverdiv span{display: flex;flex-direction: column;width: 48%;}
-
-.userinput{height: 3rem;border: none;background: rgba(249, 249, 249, 1);padding: 1rem;}
-.update-profile-container select{height: 3rem;border: none;background: rgba(249, 249, 249, 1);padding: 1rem;border: none;}
-.updateprofile-nav{ height: 4rem;margin-left: 7rem;
-                        width: 90%;display: flex;flex-direction: row;
-                        justify-content: space-between;background: #ffffff; }
-
-    .updateprofile-order-img{height:2.5rem;margin-top: .5rem;width: 11rem;}
-
-
-.update-profile-address-button{background:rgba(252, 138, 6, 1) ;width: 34rem;border-radius:0 0 1rem 1rem ;display: flex ; flex-direction: row;justify-content: space-between; padding: 1rem; }
-    .updateprofile-nav-links{width: 70%;display: flex;flex-direction: row;font-weight: bold; font-size: .9rem;}
 
     .updateprofile-nav-links-home{
        width: 17%;  height: 100%;text-align: center;padding-top: 1.4rem;}
@@ -166,9 +138,10 @@
 
     .updateprofile-nav-links-login-signup img{ height:1.5rem ;width:1.5rem ;margin-left: 1rem;margin-top: .5rem;}
 
-    .updateprofile-nav-links-login-signup p{margin-top: .7rem;margin-left: .5rem; width: 60%;margin-left: .5rem;overflow: hidden;height: 1rem;}
-
+    .updateprofile-nav-links-login-signup p{margin-top: .7rem;margin-left: .5rem; width: 60%;margin-left: .5rem;overflow: hidden;}
 
 
     .manageaddress-edit{border: none;background: none; color: rgba(252, 138, 6, 1);   border-right:  2px solid #ddd7d7;padding:.2rem .6rem .2rem 1rem}
         .manageaddress-remove{border: none;background: none; color: rgba(252, 138, 6, 1); padding:.2rem .6rem .2rem 1rem}
+
+

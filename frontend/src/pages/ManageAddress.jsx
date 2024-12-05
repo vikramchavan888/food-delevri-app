@@ -10,7 +10,42 @@ import { handleError, handleSuccess } from "../utils";
 import "./ManageAddress.css";
 
 const ManageAddress = () => {
-
+  const indianStates = [
+    "Andhra Pradesh",
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Chhattisgarh",
+    "Goa",
+    "Gujarat",
+    "Haryana",
+    "Himachal Pradesh",
+    "Jharkhand",
+    "Karnataka",
+    "Kerala",
+    "Madhya Pradesh",
+    "Maharashtra",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Punjab",
+    "Rajasthan",
+    "Sikkim",
+    "Tamil Nadu",
+    "Telangana",
+    "Tripura",
+    "Uttar Pradesh",
+    "Uttarakhand",
+    "West Bengal",
+    "Andaman and Nicobar Islands",
+    "Chandigarh",
+    "Dadra and Nagar Haveli and Daman and Diu",
+    "Delhi",
+    "Lakshadweep",
+    "Puducherry",
+  ];
 
   const navigate = useNavigate();
   const { user } = useContext(UserContext);
@@ -24,7 +59,7 @@ const ManageAddress = () => {
     return null;
   }
 
-  const { setSelectedAddress , selectedAddress} = useAddress();
+  const { setSelectedAddress, selectedAddress } = useAddress();
 
   const handleSelectAddress = (address) => {
     setSelectedAddress(address);
@@ -35,9 +70,6 @@ const ManageAddress = () => {
   const [addresses, setAddresses] = useState([]);
   const [showCardPopup, setShowCardPopup] = useState(false);
   const [currentAddress, setCurrentAddress] = useState(null);
-
-
-
 
   // Fetch addresses on component mount or when the user changes
   useEffect(() => {
@@ -89,8 +121,6 @@ const ManageAddress = () => {
     }
   };
 
-
-  
   return (
     <>
       <Navbar />
@@ -124,7 +154,7 @@ const ManageAddress = () => {
       </h2>
 
       <div className="update-profile-container">
-        <div className="updateprofile-cards-container">
+        <div className="updateprofile-addresss-container">
           <div
             className="Add-New-address"
             onClick={() => {
@@ -180,7 +210,7 @@ const ManageAddress = () => {
                   onClick={async () => {
                     try {
                       await axios.delete(
-                        `https://food-delevri-app.vercel.app/auth/delete-address/${userId}/${address._id}`
+                        `http://localhost:3000/auth/delete-address/${userId}/${address._id}`
                       );
                       setAddresses((prevAddresses) =>
                         prevAddresses.filter((item) => item._id !== address._id)
@@ -204,11 +234,57 @@ const ManageAddress = () => {
               onClick={() => setShowCardPopup(false)}
               className="Form-wrapper"
             ></div>
-            <div className="popup-content">
+            <div className="popup-content-address">
               <h3>{currentAddress?._id ? "Edit Address" : "Add Address"}</h3>
+
               <span>
-                <label>Phone Number</label>
+                <select
+                  className="address-input"
+                  value={currentAddress.state}
+                  onChange={(e) =>
+                    setCurrentAddress({
+                      ...currentAddress,
+                      state: e.target.value,
+                    })
+                  }
+                >
+                  <option value="">Select State</option>
+                  {indianStates.map((state, index) => (
+                    <option key={index} value={state}>
+                      {state}
+                    </option>
+                  ))}
+                </select>
+
                 <input
+                  className="address-input"
+                  placeholder="City/District"
+                  type="text"
+                  value={currentAddress.city}
+                  onChange={(e) =>
+                    setCurrentAddress({
+                      ...currentAddress,
+                      city: e.target.value,
+                    })
+                  }
+                />
+
+                <input
+                  className="address-input"
+                  placeholder="Pin code"
+                  type="text"
+                  value={currentAddress.pincode}
+                  onChange={(e) =>
+                    setCurrentAddress({
+                      ...currentAddress,
+                      pincode: e.target.value,
+                    })
+                  }
+                />
+
+                <input
+                  className="address-input"
+                  placeholder="Phone Number"
                   type="text"
                   value={currentAddress.phoneNumber}
                   onChange={(e) =>
@@ -220,47 +296,9 @@ const ManageAddress = () => {
                 />
               </span>
               <span>
-                <label>State</label>
                 <input
-                  type="text"
-                  value={currentAddress.state}
-                  onChange={(e) =>
-                    setCurrentAddress({
-                      ...currentAddress,
-                      state: e.target.value,
-                    })
-                  }
-                />
-              </span>
-              <span>
-                <label>City</label>
-                <input
-                  type="text"
-                  value={currentAddress.city}
-                  onChange={(e) =>
-                    setCurrentAddress({
-                      ...currentAddress,
-                      city: e.target.value,
-                    })
-                  }
-                />
-              </span>
-              <span>
-                <label>Pincode</label>
-                <input
-                  type="text"
-                  value={currentAddress.pincode}
-                  onChange={(e) =>
-                    setCurrentAddress({
-                      ...currentAddress,
-                      pincode: e.target.value,
-                    })
-                  }
-                />
-              </span>
-              <span>
-                <label>Address Line</label>
-                <input
+                  className="fulladdress-input"
+                  placeholder="Enter  full address"
                   type="text"
                   value={currentAddress.addressline}
                   onChange={(e) =>
@@ -271,14 +309,6 @@ const ManageAddress = () => {
                   }
                 />
               </span>
-            </div>
-            <div className="update-profile-address-button">
-              <button
-                onClick={() => setShowCardPopup(false)}
-                className="address-cancel-btn"
-              >
-                Cancel
-              </button>
               <button onClick={handleSaveAddress} className="address-save-btn">
                 {currentAddress?._id ? "Save Changes" : "Add Address"}
               </button>
