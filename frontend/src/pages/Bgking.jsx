@@ -34,25 +34,25 @@ const Bgking = () => {
   }
 
 const handleserachBurgers = (e) => {
-  setSearchTerm(burger);
+  setSearchTerm(burger.toLowerCase());
 };
 const handleserachSnacks = (e) => {
-  setSearchTerm(Snacks);
+  setSearchTerm(Snacks.toLowerCase());
 };
 const handleserachFries = (e) => {
-  setSearchTerm(Fries);
+  setSearchTerm(Fries.toLowerCase());
 };
 const handleserachSalads = (e) => {
-  setSearchTerm(Salads);
+  setSearchTerm(Salads.toLowerCase());
 };
 const handleserachcolddrink = (e) => {
-  setSearchTerm(colddrink);
+  setSearchTerm(colddrink.toLowerCase());
 };
 const handleserachHotdrinks = (e) => {
-  setSearchTerm(Hotdrinks);
+  setSearchTerm(Hotdrinks.toLowerCase());
 };
 const handleserachHappyMeal = (e) => {
-  setSearchTerm(meal);
+  setSearchTerm(meal.toLowerCase());
 };
 
 
