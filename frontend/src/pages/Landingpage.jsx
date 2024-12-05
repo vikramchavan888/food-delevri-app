@@ -221,7 +221,7 @@ const { user } = useContext(UserContext);
 
         <div className="landindpage-banner-two-image-backgroung">
           <img
-            className="landindpage-media-q-image"
+            className="landindpage-media-q-image-xyz"
             src="https://res.cloudinary.com/dlwpgtmcn/image/upload/v1733318550/Personalised_Instant_sgqygm.png"
           />
           <img

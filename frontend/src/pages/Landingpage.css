@@ -1,4 +1,4 @@
-     .landindpage-media-q-image{height: 0;width: 0;}
+   .landindpage-media-q-image-xyz{height: 0;width: 0;}
 
      .landingpage-nav{ height: 4rem;margin-left: 4rem; 
                         width: 90%;display: flex;flex-direction: row;
@@ -589,7 +589,7 @@ height: auto;
     border-radius: 1rem;}
 
 
-    .landindpage-media-q-image{
+  .landindpage-media-q-image-xyz{
         display: block;
         width: 13rem;
         z-index: 2;
