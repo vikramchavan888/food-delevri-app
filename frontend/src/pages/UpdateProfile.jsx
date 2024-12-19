@@ -106,7 +106,7 @@ const handleSaveCard = async () => {
         `https://food-delevri-app.vercel.app/auth/${userId}`,
         userInfo
       );
-      setUser(response.data.data);
+      setUserInfo(response.data.data);
       alert("Profile updated successfully!");
     } catch (error) {
       console.error("Error updating profile:", error);
